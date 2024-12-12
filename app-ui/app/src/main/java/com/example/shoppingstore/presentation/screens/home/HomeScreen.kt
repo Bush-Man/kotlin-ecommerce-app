@@ -9,6 +9,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.shoppingstore.presentation.screens.categories.CategoriesScreen
 import com.example.shoppingstore.presentation.screens.home.components.BottomNavigationBar
 import com.example.shoppingstore.presentation.screens.home.components.DeliveryLocationSearch
 import com.example.shoppingstore.presentation.screens.home.components.MostPopularProductsHorizontalScroller
@@ -34,7 +35,8 @@ fun HomeScreen(modifier: Modifier){
 
             QuickLinks(modifier = modifier)
             Spacer(modifier.height(10.dp))
-            SingleProductScreen(modifier = Modifier)
+            CategoriesScreen(modifier = Modifier)
+//            SingleProductScreen(modifier = Modifier)
 //            TwoColumnGridWithLazyColumn()
         }
 
